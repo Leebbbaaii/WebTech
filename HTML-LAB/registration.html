@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7</title>
+</head>
+<body>
+    <h1>LAB ACTIVITY 7: HTML Forms</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>Registration form: </b></legend>
+        <label for="Names"><b>Full Name:</b></label>
+                                <!-- Required -->
+        <input type="text" id="Name" required placeholder="LastName, FirstName">
+
+        <label for="StudentID"><b>StudentID:</b></label>
+                                             <!-- MaxLenght -->
+        <input type="int" id="StudentID" required maxlength="15" placeholder="12-3456-789">
+         <br>
+         <br>
+        <label for="email"><b>Email Address:</b></label>
+                                           <!-- Placeholder -->
+        <input type="email" id="Email" required placeholder="123@ex.com">
+        <label for="password"><b>password:</b></label>
+                                             <!-- MinLenght -->
+        <input type="password" id="Password" required minlength="8" placeholder="123456789ABC">
+        <br>
+        <br>
+        <label for="Birthday"><b>Birthday: </b></label>
+        <select name="Month" id="Month" required>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="Augaust">Augaust</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <select name="Day" id="Day" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="Year" id="Year" required>Year
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="Gender"><b>Gender: </b></label>
+        <input type="radio" name="Gender" id="Male" value="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female" value="Female" required>
+        <label for="Female">Female</label>
+
+        <br>
+        <br>
+
+        <label for="Program">Programs: </label><br>
+        <input type="radio" name="Program" id="College Of Computer Science and Technology" value="College Of Computer Science and Technology" required>
+        <label for="Male"><b>College Of Computer Science and Technology</b></label><br>
+        <input type="radio" name="Program" id="College of Accountancy" value="College of Accountancy" required>
+        <label for="Male"><b>College of Accountancy</b></label><br>
+        <input type="radio" name="Program" id="Nursing" value="Nursing" required>
+        <label for="Male"><b>Nursing</b></label><br>
+
+        <br>
+        <fieldset>
+            <legend><b>Fill up each box</legend>
+            <p><b>Hobbies</b></p>
+            <textarea name="Hobbies" id="Hobbies" style="width:400px; height:100px;" required placeholder="Basketball etc...."></textarea><br>
+            <p><b>Address: </b></p>
+            <textarea name="Address" id="Address" style="width:400px; height:100px;" required placeholder="Purok san juan bgc karma bar...."></textarea><br>
+            <p><b>Comment: </b></p>
+            <textarea name="Comment" id="Comment" style="width:400px; height:100px;" required placeholder="Iloveyouvirus123...."></textarea><br>
+
+        </fieldset>
+        <button type="button" onclick="alert('Submit')">Submit</button>
+        <button type="button" onclick="alert('Reset')">Reset</button>
+    </fieldset>
+    </form>
+
+
+</body>
+</html>
